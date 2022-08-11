@@ -6,6 +6,8 @@ class Post(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+    head_image = models.ImageField(upload_to='blog/images/%Y/%d/', blank=True)
 # Create your models here.
 
     def __str__(self):
