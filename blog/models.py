@@ -8,6 +8,8 @@ class Post(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     head_image = models.ImageField(upload_to='blog/images/%Y/%d/', blank=True)
+    file_upload = models.FileField(upload_to='blog/files/%Y/%d/', blank=True)
+
 # Create your models here.
 
     def __str__(self):
