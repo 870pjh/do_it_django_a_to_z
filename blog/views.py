@@ -8,7 +8,7 @@ from django.utils.text import slugify
 
 class PostList(ListView):
     model = Post
-    odering = '-pk'
+    ordering = '-pk'
 
     def get_context_data(self, **kwargs):
         context = super(PostList, self).get_context_data()
@@ -53,7 +53,7 @@ class PostCreate(LoginRequiredMixin, UserPassesTestMixin, CreateView):
                         tag.slug = slugify(t, allow_unicode=True)
                         tag.save()
                     self.object.tags.add(tag)
-                return response
+            return response
 
         else:
             return redirect('/blog/')
