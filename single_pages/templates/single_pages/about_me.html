@@ -6,30 +6,85 @@
     <title>About Me</title>
 
     <link href="{% static 'blog/bootstrap5/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="screen">
+    <link href="{% static 'single_pages/css/about_me.css' %}" rel="stylesheet" type="text/css" media="screen">
     <script src="https://kit.fontawesome.com/9c6355ff01.js" crossorigin="anonymous"></script>
 </head>
 <body>
-{% include 'blog/navbar.html' %}
-<section>
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-lg-6 text-dark">
-                <h1 class="mt-5">Do It Django</h1>
-                <p>안녕하십니까 박진현입니다.</p>
-                <p>No pain No gain
-                </p>
-                <p>경험
--
-                -
-                </p>
-                <p>학력
--
-                </p>
-                <p>
-                    자격증
--
 
+{% include 'blog/navbar.html' %}
+
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1>Do It Django</h1>
+                <br/>
+                <p class="lead">
+                    안녕하십니까 870입니다.
                 </p>
+
+                <ul>
+                    <li>학력</li>
+                    <ul>
+                        <li>..</li>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul>
+                    <li>경험</li>
+                    <ul>
+                        <li>..</li>
+                        <li>..</li>
+                        <li>..</li>
+                    </ul>
+                    <li>자격증</li>
+                    <ul>
+                        <li>..</li>
+                        <li>..</li>
+                        <li>..</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <img class="img-fluid" src="{% static 'single_pages/images/12.jpg' %}">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light margin-for-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>PORTFOLIO</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'single_pages/images/12.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">--</h5>
+                        <p>..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'single_pages/images/12.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">--</h5>
+                        <p>--</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'single_pages/images/12.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">--</h5>
+                        <p>--</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
